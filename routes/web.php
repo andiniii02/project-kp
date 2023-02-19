@@ -14,5 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main.index');
+});
+Route::get('/login', function () {
+    return view('main.login');
+});
+Route::get('/tabel-judul', function () {
+    return view('main.tabel-judul');
+});
+Route::get('/tabel-proposal', function () {
+    return view('main.tabel-proposal');
+});
+Route::get('/tabel-hasil', function () {
+    return view('main.tabel-hasil');
+});
+Route::get('/tabel-skripsi', function () {
+    return view('main.tabel-skripsi');
 });
